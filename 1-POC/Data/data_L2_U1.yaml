@@ -1,0 +1,8 @@
+train:  ../../L2_U1/Data/images/train/
+val:  ../../L2_U1/Data/images/val/
+
+
+
+
+nc: 2
+names: ['Fungi','Yeast']

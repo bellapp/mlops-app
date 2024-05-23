@@ -1,0 +1,29 @@
+image: python:3.10
+
+pipelines:
+  default:
+    - step:
+        name: Build and push Docker images
+        script:
+          - echo $DOCKERHUB_PASSWORD | docker login --username $DOCKERHUB_USERNAME --password-stdin
+          - docker build -t bellout/fastapi .
+          - docker push bellout/fastapi
+        services:
+          - docker
+    - step:
+        name: Deploy to DigitalOcean
+        script:
+          - pipe: atlassian/ssh-run:0.3.0
+            variables:
+              SERVER: $DIGITALOCEAN_DROPLET_IP
+              SSH_USER: '$SSH_USER'
+              SERVER_PORT: '80'
+              COMMAND: 'bash ./cleanbash.sh'
+          - pipe: atlassian/ssh-run:0.2.8
+            variables:
+              SERVER: $DIGITALOCEAN_DROPLET_IP
+              SSH_USER: '$SSH_USER'
+              SERVER_PORT: '80'
+              COMMAND: 'docker run --restart unless-stopped  --detach --publish 8081:8081 bellout/fastapi '
+        services:
+          - docker

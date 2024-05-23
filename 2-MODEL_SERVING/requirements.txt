@@ -1,0 +1,12 @@
+mysql-connector-python
+fastapi 
+uvicorn
+boto3
+python-multipart
+codecarbon
+apscheduler 
+pandas 
+sqlalchemy 
+pymysql
+pydantic_settings
+opencv-python

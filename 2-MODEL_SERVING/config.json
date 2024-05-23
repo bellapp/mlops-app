@@ -1,0 +1,62 @@
+[
+    {
+        "name": "LEMPA_YGC",
+        "model": "model_1_2"
+    },
+    {
+        "name": "CONIDIA_FUNGI_YEAST",
+        "model": "model_2_1"
+    },
+    {
+        "name": "CONIDIA_FUNGI_BACTERIA",
+        "model": "model_2_2"
+    },
+    {
+        "name": "CONIDIA_FUNGI",
+        "model": "model_2_3"
+    },
+    {
+        "name": "CONIDIA_BACTERIA",
+        "model": "model_2_4"
+    },
+    {
+        "name": "LEMPA_LAB",
+        "model": "model_1_1"
+    },
+    {
+        "name": "NeuralTeks_LAB",
+        "model": "model_3_1"
+    },
+    {
+        "name": "NeuralTeks_YGC",
+        "model": "model_3_2"
+    },
+    {
+        "name": "NeuralTeks_FUNGI_YEAST",
+        "model": "model_3_3"
+    },
+    {
+        "name": "NeuralTeks_FUNGI_BACTERIA",
+        "model": "model_3_4"
+    },
+    {
+        "name": "NeuralTeks_FUNGI",
+        "model": "model_3_5"
+    },
+    {
+        "name": "NeuralTeks_BACTERIA",
+        "model": "model_3_6"
+    },
+    {
+        "name": "NeuralTeks_BACTERIA2",
+        "model": "model_3_6_2"
+    },
+    {
+        "name": "NeuralTeks_FUNGI_BACTERIA_I",
+        "model": "model_3_7"
+    },
+    {
+        "name": "NeuralTeks_BACTERIA2_AR",
+        "model": "model_3_8"
+    }
+]   

@@ -1,0 +1,17 @@
+stages:
+  download_data:
+    cmd: s3cmd --config /home/forge/.s3cfg sync s3://microteks/data-images-al/$CLIENT/$USECASE/ data/ --recursive --force
+    outs:
+    - data/
+  move_data:
+    cmd: ./move_data.sh
+    deps:
+      - move_data.sh
+      - data/
+    outs:
+      - data_model/
+  build_train_valid_folder:
+    cmd: /home/forge/microteks-al-venv/bin/python build_train_valid.py
+    deps:
+      - data_model/
+

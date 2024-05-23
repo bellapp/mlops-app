@@ -1,0 +1,11 @@
+pydantic 
+mysql-connector-python
+fastapi 
+uvicorn 
+python-multipart 
+boto3
+sqlalchemy 
+pymysql
+pydantic_settings
+requests
+mlflow

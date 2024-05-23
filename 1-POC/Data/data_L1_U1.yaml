@@ -1,0 +1,8 @@
+train:  ../../L1_U1/Data/images/train/
+val:  ../../L1_U1/Data/images/val/
+
+
+
+
+nc: 1
+names: ['Bacteria']
