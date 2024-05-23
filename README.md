@@ -1,2 +1,0 @@
-# mlops-app
-MLOPS Application
